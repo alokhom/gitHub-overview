@@ -26,7 +26,7 @@ jobs:
       - name: second-job step
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.
+          echo test, and deploy your project. ${{ secrets.MY_SECRET }}
   thirdjob:
     runs-on: ubuntu-latest
     steps:
